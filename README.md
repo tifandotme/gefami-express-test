@@ -1,5 +1,14 @@
 # gefami-express-test
 
+## Prerequisites
+
+Make sure you have these programs installed:
+
+- `bun`
+- `xh` (optional, to test the APIs using below commands)
+
+## Starting server
+
 To install dependencies:
 
 ```bash
@@ -9,7 +18,27 @@ bun install
 To run:
 
 ```bash
-bun run index.ts
+bun index.ts
 ```
 
-This project was created using `bun init` in bun v1.2.5. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
+## Endpoints
+
+### GET
+
+```bash
+# Success: With correct headers
+xh -v GET http://localhost:3000/api/users user-id:ifabula scope:user
+
+# Fail: Without required headers
+xh -v GET http://localhost:3000/api/users
+```
+
+### POST
+
+```bash
+# Success: With correct headers
+xh -v POST http://localhost:3000/api/users user-id:ifabula scope:user name=Test email=test@example.com
+
+# Fail: Without required headers
+xh -v POST http://localhost:3000/api/users name=Test email=test@example.com
+```
