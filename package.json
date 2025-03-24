@@ -1,0 +1,16 @@
+{
+  "name": "gefami-express-test",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "@types/dotenv": "^8.2.3",
+    "@types/express": "^5.0.1",
+    "@types/node": "^22",
+    "typescript": "^5"
+  }
+}
