@@ -42,3 +42,7 @@ xh -v POST http://localhost:3000/api/users user-id:ifabula scope:user name=Test 
 # Fail: Without required headers
 xh -v POST http://localhost:3000/api/users name=Test email=test@example.com
 ```
+
+## Demo
+
+[![asciicast](https://asciinema.org/a/HWXveHmfodVFNYqEYRYLvzMdB.svg)](https://asciinema.org/a/HWXveHmfodVFNYqEYRYLvzMdB)
