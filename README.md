@@ -4,8 +4,8 @@
 
 Make sure you have these programs installed:
 
-- `bun`
-- `xh` (optional, to test the APIs using below commands)
+- [bun](https://bun.sh)
+- [xh](https://github.com/ducaale/xh) (optional, to test the APIs using below commands)
 
 ## Starting server
 
